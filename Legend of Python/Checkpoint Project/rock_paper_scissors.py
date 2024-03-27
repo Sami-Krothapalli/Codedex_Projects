@@ -88,6 +88,7 @@ def game_logic(user_choice, computer_choice):
 def retry_func():
     ## Title Page:
     print("===================")
+    retry = input("Do you want to play again? (y/n): ")
     if retry == "y":
         user_choice = int(input("Enter your choice: "))
         computer_choice = random.randint(1, 3)
